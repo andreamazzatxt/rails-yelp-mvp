@@ -10,8 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
-
   <body>
-    <%= yield %>
+    <div class="head">
+      <%= link_to 'Yelp MVP', restaurants_path %>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

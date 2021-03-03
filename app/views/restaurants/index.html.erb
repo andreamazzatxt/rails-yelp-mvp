@@ -1,0 +1,9 @@
+
+
+<% @restaurants.each do |restaurant| %>
+  <div class="card my-2 d-flex flex-row justify-content-center align-items-center">
+    <h2 class="p-3"><%= link_to restaurant.name, restaurant_path(restaurant) %></h2>
+  </div>
+<% end %>
+
+<%= link_to 'Add +', new_restaurant_path %>
